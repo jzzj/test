@@ -1,9 +1,9 @@
 {
-  "name": "react-simple-manager",
+  "name": "jzzj/test",
   "author": {
     "name": "zangzhan"
   },
-  "description": "Simple way to manager your react/react-native apps",
+  "description": "This is used for test",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.21.0",
@@ -39,10 +39,7 @@
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   },
-  "dependencies": {
-    "immutable": "^3.8.1"
-  },
-  "homepage": "https://github.com/jzzj/react-simple-manager#readme",
+  "homepage": "https://github.com/jzzj/test#readme",
   "keywords": [
     "manager",
     "react",
@@ -53,7 +50,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jzzj/react-simple-manager.git"
+    "url": "git+https://github.com/jzzj/test.git"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha --compilers js:babel-core/register",
