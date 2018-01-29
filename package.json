@@ -34,6 +34,7 @@
     "babel-plugin-transform-es2015-unicode-regex": "^6.11.0",
     "babel-plugin-transform-exponentiation-operator": "^6.8.0",
     "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "mocha": "^3.2.0",
@@ -54,8 +55,8 @@
     "url": "git+https://github.com/jzzj/test.git"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha --compilers js:babel-core/register",
-    "pretest": "node_modules/.bin/babel src --out-dir lib --preset=es2015,react",
+    "test": "node_modules/.bin/mocha --compilers js:babel-core/register --require babel-polyfill",
+    "pretest": "node_modules/.bin/babel src --out-dir lib --preset=es2015,stage-0,react --require babel-polyfill",
     "prepublish": "npm test",
     "mkexample": "node_modules/.bin/babel examples/todoList.src.js --out-file examples/todoList.js  --preset=es2015,react && browserify examples/todoList.js  -o examples/todoList.js.b && cat examples/todoList.js.b>examples/todoList.js && rm -f examples/todoList.js.b"
   },
